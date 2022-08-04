@@ -1,0 +1,33 @@
+.inp{
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-bottom: 3px;
+}
+.inp2{
+    margin-left: 70px;
+
+}
+.btn1{
+    margin-top: 20px;
+    width: 100px;
+    height:40px;
+    margin-left: 100px;
+}
+h2{
+    margin-top: 20px;
+    margin-left:90px;
+}
+input.ng-invalid{
+    border-left:5px solid red;
+
+}
+input.ng-valid{
+    border-left:5px solid green;
+    
+}
+.error{
+    color: red;
+    margin-left: 75px;
+    top: 0;
+    
+}

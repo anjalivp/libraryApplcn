@@ -1,0 +1,18 @@
+<div class="wrapper" style="height:600px">
+
+
+    <div class="block">
+        <form (ngSubmit)="loginUser()" #userlogin="ngForm">
+            <h2>LOG IN</h2>
+            <label for="uname1" style="text-align:center">Username</label>
+            <input #username="ngModel" type="text" ngModel name="uname" class="inp" [(ngModel)]="user.uname" required/>
+            <span *ngIf="username.invalid && username.touched" class="error">username is required</span>
+            <br><label>Password</label>
+            <input #password="ngModel" type="password" ngModel name="password" class="inp2" [(ngModel)]="user.password" required/>
+            <span *ngIf="password.invalid && password.touched" class="error">password is required</span>
+            <br><button  type="submit" class="btn1" [disabled]="userlogin.form.invalid">LOG IN</button>
+        </form>
+
+    </div>
+</div>
+
